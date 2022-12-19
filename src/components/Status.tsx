@@ -1,5 +1,7 @@
+import { StatusConditions } from '../App'
+
 type StatusProps = {
-  status: string
+  status: StatusConditions
 }
 
 const Status = (props: StatusProps) => {
