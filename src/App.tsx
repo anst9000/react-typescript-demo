@@ -8,9 +8,14 @@ import { Oscar } from './components/Oscar'
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList'
 import { Status } from './components/Status'
+import { LoggedStatus } from './state/LoggedStatus'
 
 function App() {
-  return <div className="App"></div>
+  return (
+    <div className="App">
+      <LoggedStatus />
+    </div>
+  )
 }
 
 export default App
