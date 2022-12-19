@@ -1,6 +1,8 @@
 import './App.css'
+import { Button } from './components/Button'
 import { Greet } from './components/Greet'
 import { Heading } from './components/Heading'
+import { Input } from './components/Input'
 import { Oscar } from './components/Oscar'
 import { Person } from './components/Person'
 import PersonList from './components/PersonList'
@@ -15,12 +17,12 @@ export enum StatusConditions {
 function App() {
   return (
     <div className="App">
-      <Status status={StatusConditions.ERROR} />
-      <Heading>Placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to Leonardo Di Caprio</Heading>
-      </Oscar>
-      <Greet name={'Andy'} isLoggedIn={true} />
+      <Button
+        handleClick={(event, id) => {
+          console.log('Button clicked', event, id)
+        }}
+      />
+      <Input value="" handleChange={(event) => console.log(event)} />
     </div>
   )
 }
