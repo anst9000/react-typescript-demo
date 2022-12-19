@@ -1,5 +1,6 @@
 import './App.css'
 import { Button } from './components/Button'
+import { Container } from './components/Container'
 import { Greet } from './components/Greet'
 import { Heading } from './components/Heading'
 import { Input } from './components/Input'
@@ -17,12 +18,13 @@ export enum StatusConditions {
 function App() {
   return (
     <div className="App">
-      <Button
-        handleClick={(event, id) => {
-          console.log('Button clicked', event, id)
+      <Container
+        styles={{
+          border: '1px solid black',
+          padding: '1rem',
+          backgroundColor: 'pink',
         }}
       />
-      <Input value="" handleChange={(event) => console.log(event)} />
     </div>
   )
 }
