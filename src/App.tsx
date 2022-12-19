@@ -6,27 +6,11 @@ import { Heading } from './components/Heading'
 import { Input } from './components/Input'
 import { Oscar } from './components/Oscar'
 import { Person } from './components/Person'
-import PersonList from './components/PersonList'
-import Status from './components/Status'
-
-export enum StatusConditions {
-  LOADING = 'loading',
-  SUCCESS = 'success',
-  ERROR = 'error',
-}
+import { PersonList } from './components/PersonList'
+import { Status } from './components/Status'
 
 function App() {
-  return (
-    <div className="App">
-      <Container
-        styles={{
-          border: '1px solid black',
-          padding: '1rem',
-          backgroundColor: 'pink',
-        }}
-      />
-    </div>
-  )
+  return <div className="App"></div>
 }
 
 export default App

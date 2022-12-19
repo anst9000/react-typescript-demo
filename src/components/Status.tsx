@@ -1,10 +1,6 @@
-import { StatusConditions } from '../App'
+import { StatusProps } from '../types'
 
-type StatusProps = {
-  status: StatusConditions
-}
-
-const Status = (props: StatusProps) => {
+export const Status = (props: StatusProps) => {
   let message
   if (props.status === 'loading') message = 'Loading...'
   else if (props.status === 'success') message = 'Data fetched successfully!'
@@ -16,5 +12,3 @@ const Status = (props: StatusProps) => {
     </div>
   )
 }
-
-export default Status

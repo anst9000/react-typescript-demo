@@ -1,11 +1,6 @@
-type PersonListProps = {
-  names: {
-    first: string
-    last: string
-  }[]
-}
+import { PersonListProps } from '../types'
 
-const PersonList = (props: PersonListProps) => {
+export const PersonList = (props: PersonListProps) => {
   return (
     <div>
       {props.names.map((name) => {
@@ -18,5 +13,3 @@ const PersonList = (props: PersonListProps) => {
     </div>
   )
 }
-
-export default PersonList
